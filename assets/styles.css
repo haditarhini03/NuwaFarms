@@ -1,0 +1,28 @@
+/*===== General Styles =======*/
+:root{
+    --lightgreen:#6E704A;
+    --darkgreen:#423D24;
+    --cream:#F8F4E3;
+}
+h1, h2 {
+    font-family: 'K2D';
+}
+h3, h4, h5, h6,p, span, a, li, div, label, input::placeholder, textarea::placeholder{
+    font-family: 'K2D';
+}
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.about-page video{
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%)    ;
+object-fit: cover;
+z-index: -10;
+}

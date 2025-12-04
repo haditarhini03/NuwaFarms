@@ -1,0 +1,128 @@
+header {
+width: 100%;
+height: 80px;
+background: rgb(110, 112, 74, 0.66);
+padding: 5px 0;
+align-items: center;
+}
+
+header .container {
+width: 90%;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* ============================
+LOGO FADE EFFECT
+============================ */
+
+/* LOGO SWAP EFFECT */
+.navlogo {
+position: relative;
+display: inline-block;
+margin: 0px 70px;
+margin-top: -75px;
+}
+
+.navlogo img {
+height: 80px;
+position: absolute;
+top: 0;
+left: 0;
+transition: opacity 0.4s ease;
+}
+
+.navlogo .lightimg {
+opacity: 1;
+}
+.navlogo .darkimg {
+opacity: 0;
+}
+.navlogo:hover .darkimg {
+opacity: 1;
+}
+
+.navlogo:hover .lightimg {
+opacity: 0;
+}
+/* ============================
+NAVIGATION
+============================ */
+
+.nav ul {
+list-style: none;
+display: flex;
+gap: 100px;
+}
+
+.nav a {
+position: relative;
+display: inline-block;  /* REQUIRED for underline */
+text-decoration: none;
+color: var(--cream);
+font-weight: 600;
+font-size: 24px;
+}
+
+/* Animated underline */
+.nav a::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: -2px;
+width: 0%;
+height: 2px;
+background-color: var(--cream);
+transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+width: 100%;
+}
+
+/* ============================
+LANGUAGE SWITCHER
+============================ */
+
+.lang-switch {
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.lang-switch a {
+position: relative;
+display: inline-block;  /* REQUIRED */
+text-decoration: none;
+color: var(--darkgreen);
+font-weight: 600;
+padding-bottom: 3px;
+}
+
+/* Underline animation for lang */
+.lang-switch a::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: -2px;
+width: 0%;
+height: 2px;
+background-color: var(--cream);
+transition: width 0.3s ease;
+}
+
+.lang-switch a:hover::after {
+width: 100%;
+}
+
+/* Active language (AR) */
+.lang-switch .active {
+color: var(--cream);
+font-weight: 700;
+}
+
+.lang-switch .active::after {
+width: 100%; /* Active is always underlined */
+}

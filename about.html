@@ -9,16 +9,19 @@
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-
     <!-- HEADER -->
     <div id="header-placeholder"></div>
 
-    <section class="main-page">
-        <p>Hello</p>
+    <section class="about-page">
+        <div class="about-hero">
+            <video src="assets/images/banners/video.mp4" autoplay muted loop playinline ></video>
+            <img src="assets/images/logos/light.svg" alt="Logo" class="about-hero-logo">
+            <h1 data-key="about_hero_title"></h1>
+        </div>
     </section>
 
     <!-- FOOTER -->
-    <div id="footer-placeholder"></div>
+    <!-- <div id="footer-placeholder"></div> -->
 
     <script>
     // Load header
@@ -31,5 +34,6 @@
         .then(res => res.text())
         .then(data => document.getElementById("footer-placeholder").innerHTML = data);
     </script>
+    
     <script src="assets/js/translation.js"></script>
 </body>
