@@ -1,7 +1,31 @@
 {
-    "ABOUTHEROTITLE":"An integrated eco-farm in South Lebanon, combining agriculture, water systems, native plants, and community spaces.",
-    "nav_about": "About Us",
-    "nav_products": "Our Products",
-    "nav_book": "Book a Visit",
-    "about-hero_title": "An integrated eco-farm in South Lebanon, combining agriculture, water systems, native plants, and community spaces."
+  "nav_about": "About",
+  "nav_products": "Products",
+  "nav_book": "Book a Visit",
+
+  "hero_title": "A Living Eco-Farm in South Lebanon",
+  "hero_desc": "NUWA is a vibrant eco-farm rooted in the rich landscape of South Lebanon, where permaculture practices meet rural tourism. Designed as an integrated living system, NUWA regenerates the land through sustainable agriculture, water harvesting, and native planting.",
+
+  "btn_about": "Learn More",
+  "btn_shop": "Shop Now",
+
+  "collection_title": "Our Collection",
+  "collection_trees": "Trees",
+  "collection_plants": "Plants",
+  "collection_crops": "Crops",
+
+  "plan_title": "Masterplan View",
+
+  "build_title": "Build Your Own Farm",
+
+  "faq1_q": "Who is this for?",
+  "faq1_a": "Homeowners (Rooftops, balconies, backyards, private gardens)<br>Restaurants & Cafés (Farm-to-table herbs, vegetables, fresh produce)<br>Schools & Institutions (Educational gardens and learning spaces)<br>Landowners / Developers (Agricultural plots, food forests, eco-farm zones)",
+
+  "faq2_q": "How it works?",
+  "faq2_a": "<strong>Step 1: Consultation</strong> — We discuss your space, needs, and goals (Online or on-site)<br><strong>Step 2: Site Visit & Assessment</strong> — Sunlight, soil, water access, technical conditions<br><strong>Step 3: Custom Design & Plan</strong> — Layout, plant selection, irrigation & full system<br><strong>Step 4: Implementation</strong> — DIY or handled by our team",
+
+  "faq3_q": "What you get?",
+  "faq3_a": "Custom farm layout plan<br>Full planting strategy<br>Irrigation + compost + soil recommendations<br>Seasonal planting calendar<br>Materials list<br>Maintenance guidance<br>Optional follow-up and training",
+  "about_hero_title": "An integrated eco-farm in South Lebanon, combining agriculture, water systems, native plants, and community spaces."
+
 }

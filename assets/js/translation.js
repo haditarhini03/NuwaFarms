@@ -1,32 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-let currentLang = localStorage.getItem("xLang") || "ar";
+    function initLangSwitch() {
+        const enBtn = document.getElementById("lang-en");
+        const arBtn = document.getElementById("lang-ar");
 
-loadLanguage(currentLang);
+        if (!enBtn || !arBtn) {
+            return setTimeout(initLangSwitch, 50); // retry until header loads
+        }
 
-// Load JSON file and insert translations
-async function loadLanguage(lang) {
-    const response = await fetch(`../assets/lang/${lang}.json`);
-    const translations = await response.json();
+        // Buttons exist → now attach listeners
+        enBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            loadLanguage("en");
+        });
 
-    document.querySelectorAll("[data-key]").forEach(el => {
-        const key = el.getAttribute("data-key");
-        if (translations[key]) el.textContent = translations[key];
-    });
+        arBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            loadLanguage("ar");
+        });
 
-    // Save preference
-    localStorage.setItem("xLang", lang);
+        // Set initial language
+        const currentLang = localStorage.getItem("xLang") || "ar";
+        loadLanguage(currentLang);
+    }
 
-    // Update active class
-    document.getElementById("lang-ar").classList.toggle("active", lang === "ar");
-    document.getElementById("lang-en").classList.toggle("active", lang === "en");
+    initLangSwitch();
 
-    // Change page direction
-    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-    document.documentElement.lang = lang;
-}
+    async function loadLanguage(lang) {
+        response = await fetch(`/assets/lang/${lang}.json`);
+        const translations = await response.json();
 
-// Language switch
-document.getElementById("lang-en").addEventListener("click", () => loadLanguage("en"));
-document.getElementById("lang-ar").addEventListener("click", () => loadLanguage("ar"));
+        document.querySelectorAll("[data-key]").forEach(el => {
+            const key = el.getAttribute("data-key");
+            if (translations[key]) el.innerHTML  = translations[key];
+        });
+
+        localStorage.setItem("xLang", lang);
+
+        document.getElementById("lang-ar").classList.toggle("active", lang === "ar");
+        document.getElementById("lang-en").classList.toggle("active", lang === "en");
+
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+        document.documentElement.lang = lang;
+    }
+
 });

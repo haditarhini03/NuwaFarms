@@ -4,8 +4,20 @@ height: 80px;
 background: rgb(110, 112, 74, 0.66);
 padding: 5px 0;
 align-items: center;
+  position: fixed;   /* stays on top while scrolling */
+margin-top: -90px;
+z-index: 1000;
+}
+.home header {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity .4s ease, transform .4s ease;
 }
 
+.home header.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 header .container {
 width: 90%;
 margin: auto;
@@ -13,7 +25,11 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
-
+header.scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  height: 90px;
+  backdrop-filter: blur(6px);
+}
 /* ============================
 LOGO FADE EFFECT
 ============================ */
