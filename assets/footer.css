@@ -18,6 +18,7 @@
   font-size: 17px;
   font-weight: 500;
   color: var(--cream);
+  cursor: pointer;
 }
 
 .footer-col a {
@@ -52,8 +53,8 @@
   padding: 10px 14px;
   border-radius: 20px;
   border: 1px solid #d3d3d340;
-  background: transparent;
-  color: var(--cream);
+  background: rgb(216, 216, 216);
+  color: var(--darkgreen);
   outline: none;
 }
 
@@ -65,7 +66,8 @@
   border-radius: 20px;
   cursor: pointer;
   transition: 0.2s;
-  width: 120px;
+  width: 100px;
+  text-align: center;
 }
 
 .subscribe-form button:hover {
@@ -118,33 +120,3 @@
   opacity: 0.8;
 }
 
-
-/* Responsive */
-@media (max-width: 900px) {
-  .footer {
-    padding: 40px 30px;
-  }
-
-  .footer-content {
-    gap: 40px;
-  }
-
-  .subscribe-form {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer-content {
-    flex-direction: column;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .links a {
-    margin-left: 10px;
-  }
-}

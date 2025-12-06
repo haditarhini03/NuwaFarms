@@ -1,0 +1,145 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuwa Farms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<!-- Global Styles -->
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <section class="visit-page">
+
+    <!-- Background Image -->
+    <div class="hero-visit-background">
+        <img src="assets/images/banners/booking.jpg" alt="">
+    </div>
+
+    <div class="visit-container">
+
+        <!-- LEFT SIDE -->
+        <div class="visit-left">
+            <h1 data-key="visit_title"></h1>
+            <p data-key="visit_paragraph"></p>
+
+            <!-- FAQ -->
+            <div class="faq-item-visit">
+                <button class="faq-question-visit" data-key="whatsincluded"></button>
+                <div class="faq-answer-visit" data-key="whatsincludedAnswer"></div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE FORM -->
+        <div class="visit-right">
+            <form class="visit-form">
+
+                <label data-key="name_label"></label>
+                <input type="text" placeholder="" data-key="name_placeholder">
+
+                <label data-key="email_label"></label>
+                <input type="email" placeholder="" data-key="email_placeholder">
+
+                <label data-key="phone_label"></label>
+                <input type="text" placeholder="" data-key="phone_placeholder">
+
+                <label data-key="type_label"></label>
+                <select data-key="type_options">
+                    <option data-key="type_family"></option>
+                    <option data-key="type_group"></option>
+                    <option data-key="type_school"></option>
+                    <option data-key="type_other"></option>
+                </select>
+
+                <label data-key="people_label"></label>
+                <input type="number" placeholder="" data-key="people_placeholder">
+
+                <label data-key="request_label"></label>
+                <textarea rows="4"></textarea>
+
+                <button type="submit" class="visit-submit" data-key="submit_btn"></button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+    // Load header
+    fetch("components/header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+        // Load footer
+        fetch("components/footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    </script>
+    <script>
+    const faqItems = document.querySelectorAll(".faq-item-visit");
+
+    faqItems.forEach(item => {
+        item.querySelector(".faq-question-visit").addEventListener("click", () => {
+
+            // close all others
+            faqItems.forEach(i => {
+                if (i !== item) i.classList.remove("active");
+            });
+
+            // toggle the clicked one
+            item.classList.toggle("active");
+        });
+    });
+    </script>
+    <script>
+        // ===== TYPE OF VISIT DROPDOWN LOADER =====
+
+// List of visit types (keys must match your JSON)
+const visitTypes = [
+    "type_visit_farmtour",
+    "type_visit_workshop",
+    "type_visit_private",
+    "type_visit_school",
+    "type_visit_event"
+];
+
+// Fill dropdown based on selected language
+function loadVisitTypes(currentLang, translations) {
+    const select = document.getElementById("visitTypeSelect");
+    if (!select) return;
+
+    select.innerHTML = ""; // clear existing
+
+    visitTypes.forEach(key => {
+        const option = document.createElement("option");
+        option.value = key;
+        option.textContent = translations[currentLang][key] || key;
+        select.appendChild(option);
+    });
+}
+
+// Detect language change
+document.addEventListener("DOMContentLoaded", () => {
+    const currentLang = localStorage.getItem("lang") || "ar";
+
+    // Wait for translations object to load globally
+    if (typeof translations !== "undefined") {
+        loadVisitTypes(currentLang, translations);
+    }
+
+    // If your language switcher dispatches a custom event
+    document.addEventListener("languageChanged", (e) => {
+        const lang = e.detail.lang;
+        loadVisitTypes(lang, translations);
+    });
+});
+
+    </script>
+    <script src="assets/js/translation.js"></script>
+</body>

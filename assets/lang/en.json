@@ -26,6 +26,65 @@
 
   "faq3_q": "What you get?",
   "faq3_a": "Custom farm layout plan<br>Full planting strategy<br>Irrigation + compost + soil recommendations<br>Seasonal planting calendar<br>Materials list<br>Maintenance guidance<br>Optional follow-up and training",
-  "about_hero_title": "An integrated eco-farm in South Lebanon, combining agriculture, water systems, native plants, and community spaces."
+  "about_hero_title": "An integrated eco-farm in South Lebanon, combining agriculture, water systems, native plants, and community spaces.",
+  "principles_title": "Our Principles",
+  "principles_text": "At NUWA Farms, every decision is guided by permaculture principles that respect the land, people, and resources. These principles help us design a farm that is resilient, productive, and educational.",
+  "concept_title": "Our Concept",
+  "concept_p1": "The layout of NUWA eco-farm is organized around two main loops that shape the visitor experience. The recreational loop connects communal spaces like the family gathering area, play zone, pond, and the farmhouse restaurant, inviting relaxation and celebrating local culinary heritage. The educational loop links productive zones such as the greenhouses, kitchen beds, and multi-functional grid, encouraging engagement with sustainable farming and traditional practices.",
+  "concept_p2": "A separate livestock trail allows for the discreet movement of animals across the site. The educational loop also encourages exploration of local food systems, sustainable practices, and traditional planting knowledge. A separate livestock trail allows for practical movement of animals at the northern part of the site without disrupting visitor flow. Together, the loops create a layered experience—one centered on recreation and cultural immersion, and the other on learning and engagement with the land.",
+  
+  "systems_title": "Key Systems",
+  "systems_intro": "NUWA Farms operates as an integrated ecosystem where water, energy, soil, plants, and people all work together. Each system supports the others to reduce waste and increase overall productivity.",
+  "system1_title": "Water Systems",
+  "system1_desc": "Harvested rainwater and treated greywater are stored and redistributed through irrigation channels, ponds, and planted areas to reduce dependence on external sources.",
+  "system2_title": "Organic Waste & Compost",
+  "system2_desc": "Plant residues, kitchen scraps, and livestock manure are transformed into compost, enriching the soil’s structure and long-term fertility.",
+  "system3_title": "Energy Systems",
+  "system3_desc": "Solar panels and efficient infrastructure power daily operations, lighting, and equipment with reduced environmental impact.",
+  "system4_title": "Local Production System",
+  "system4_desc": "Greenhouses, open fields, and raised beds supply fresh produce to visitors, the farm kitchen, and the surrounding community.",
+  "plan_desc": "The final concept plan presents a spatial arrangement that merges farm operations with guest experience. The layout includes five greenhouses, a series of 30 kitchen garden beds, composting bins, livestock zone, family gathering spaces, a play area, a central Saha, and a farm-to-table restaurant. Defined pathways framed by productive trees and native hedges connect these spaces, with a central loop tying together the core functions.",
+
+  "products_hero_title": "Our Products",
+  "products_hero_p": "Explore our fresh, seasonal baskets sourced directly from our fields and prepared with care for your home.",
+  "small_box": "Small Basket",
+  "medium_box": "Medium Basket",
+  "large_box": "Large Basket",
+
+  "visit_title": "Book Your Visit",
+    "visit_paragraph": "Plan your experience at NUWA Farms and enjoy nature, agriculture, and community activities.",
+    "whatsincluded": "What’s Included?",    
+    "name_label": "Full Name",
+    "name_placeholder": "Enter your name",
+    
+    "email_label": "Email",
+    
+    "phone_label": "Phone Number",
+    "phone_placeholder": "Enter your phone number",
+    
+    "type_label": "Type of Visit",
+    "type_options": "Select type",
+    "type_family": "Family Visit",
+    "type_group": "Group Visit",
+    "type_school": "School Trip",
+    "type_other": "Other",
+    
+    "people_label": "Number of People",
+    "people_placeholder": "Enter number",
+    
+    "request_label": "Special Request",
+    "request_placeholder": "Write your request here...",
+  "whatsincludedAnswer":"<li>Guided tour of Nuwa Farms <li>Access to greenhouses & plant nursery<li>Hands-on planting / harvesting activit <li>Basket tasting / fresh produc <li>Safety & hygiene briefing",
+
+
+  "trees": "Trees",
+  "plants": "Plants",
+  "crops": "Crops",
+  "newsletter_text": "Subscribe for our farm's updates and discounts",
+  "email_placeholder": "Email",
+  "submit_btn": "Submit",
+  "footer_copyright": "© 2025 NUWA Farms. All rights reserved. NUWA™ is a registered brand.",
+  "privacy_policy": "Privacy Policy",
+  "terms_of_service": "Terms of Service"
 
 }

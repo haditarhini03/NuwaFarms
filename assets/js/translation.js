@@ -43,5 +43,14 @@ document.addEventListener("DOMContentLoaded", () => {
         document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
         document.documentElement.lang = lang;
     }
+    // Swap images if data-lang-image exists
+    document.querySelectorAll("[data-lang-image-en]").forEach(img => {
+        const newSrc = (lang === "ar") 
+            ? img.getAttribute("data-lang-image-ar")
+            : img.getAttribute("data-lang-image-en");
+
+        if (newSrc) img.src = newSrc;
+    });
+
 
 });

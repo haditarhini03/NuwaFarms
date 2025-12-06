@@ -18,10 +18,109 @@
             <img src="assets/images/logos/light.svg" alt="Logo" class="about-hero-logo">
             <h1 data-key="about_hero_title"></h1>
         </div>
+        <div class="principles">
+            <h1 data-key="principles_title"></h1>
+            <p data-key="principles_text"></p>
+
+            <!-- English image (default) -->
+            <img src="assets/images/banners/OurPrinciplesEN.png" 
+                alt="Our Principles" 
+                class="principles-img" 
+                data-lang-image-en="assets/images/banners/OurPrinciplesEN.png"
+                data-lang-image-ar="assets/images/banners/OurPrinciplesAR.png">
+        </div>
+        <div class="concept">
+            <h1 data-key="concept_title"></h1>
+            <div class="concept-paragraphs">
+                <p data-key="concept_p1"></p>
+                <p data-key="concept_p2"></p>
+            </div>
+
+            <img src="assets/images/banners/concept.png" alt="">
+        </div>
+        <div class="systems-section">
+            <!-- Left image -->
+            <div class="systems-image">
+                <img src="assets/images/banners/oliveTree.png" alt="Olive Tree">
+            </div>
+
+            <!-- Right content -->
+            <div class="systems-content">
+            <h1 data-key="systems_title"></h1>
+            <p data-key="systems_intro"></p>
+
+            <!-- 4-card grid -->
+            <div class="systems-grid">
+
+                <!-- Card 1 -->
+                <div class="system-card">
+                    <img src="assets/images/banners/waterSystem.png" alt="Water System">
+                    <h3 data-key="system1_title"></h3>
+                    <p data-key="system1_desc"></p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="system-card">
+                    <img src="assets/images/banners/OrganicWasteCompost.png" alt="Organic Waste & Compost">
+                    <h3 data-key="system2_title"></h3>
+                    <p data-key="system2_desc"></p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="system-card">
+                    <img src="assets/images/banners/energySystem.png" alt="Energy Systems">
+                    <h3 data-key="system3_title"></h3>
+                    <p data-key="system3_desc"></p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="system-card">
+                    <img src="assets/images/banners/LocalSystem.png" alt="Local Production System">
+                    <h3 data-key="system4_title"></h3>
+                    <p data-key="system4_desc"></p>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+        <div class="about-masterPlan">
+            <h1 data-key="plan_title"></h1>
+            <p data-key="plan_desc"></p>
+            <img src="assets/images/banners/masterPlan.png" alt="Master Plan">
+        </div>  
+        <div class="trees">
+            <h1 data-key="trees_title">Our Trees</h1>
+            <div class="trees-grid-desktop">
+                <img src="assets/images/banners/trees1.png" alt="">
+                <img src="assets/images/banners/trees2.png" alt="">
+                <img src="assets/images/banners/trees3.png" alt="">
+            </div>
+            <div class="trees-grid-phone">
+                <img src="assets/images/banners/trees2_1.png" alt="">
+                <img src="assets/images/banners/trees2_2.png" alt="">
+                <img src="assets/images/banners/trees2_3.png" alt="">
+                <img src="assets/images/banners/trees2_4.png" alt="">
+                <img src="assets/images/banners/trees2_5.png" alt="">
+
+            </div>
+        </div>
+        <div class="plants">
+            <h1 data-key="plants_title">Our Plants</h1>
+            <div class="plants-grid">
+                <img src="assets/images/banners/plants1.png" alt="">
+                <img src="assets/images/banners/plants2.png" alt="">
+                <img src="assets/images/banners/plants3.png" alt="">
+                <img src="assets/images/banners/plants4.png" alt="">
+                <img src="assets/images/banners/plants5.png" alt="">
+                <img src="assets/images/banners/plants6.png" alt="">
+
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER -->
-    <!-- <div id="footer-placeholder"></div> -->
+    <div id="footer-placeholder"></div>
 
     <script>
     // Load header
@@ -30,9 +129,9 @@
         .then(data => document.getElementById("header-placeholder").innerHTML = data);
 
     // Load footer
-    // fetch("components/footer.html")
-    //     .then(res => res.text())
-    //     .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+     fetch("components/footer.html")
+         .then(res => res.text())
+         .then(data => document.getElementById("footer-placeholder").innerHTML = data);
     </script>
     
     <script src="assets/js/translation.js"></script>
