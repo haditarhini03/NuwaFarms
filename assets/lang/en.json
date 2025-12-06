@@ -26,6 +26,7 @@
 
   "faq3_q": "What you get?",
   "faq3_a": "Custom farm layout plan<br>Full planting strategy<br>Irrigation + compost + soil recommendations<br>Seasonal planting calendar<br>Materials list<br>Maintenance guidance<br>Optional follow-up and training",
+ 
   "about_hero_title": "An integrated eco-farm in South Lebanon, combining agriculture, water systems, native plants, and community spaces.",
   "principles_title": "Our Principles",
   "principles_text": "At NUWA Farms, every decision is guided by permaculture principles that respect the land, people, and resources. These principles help us design a farm that is resilient, productive, and educational.",
@@ -63,11 +64,12 @@
     "phone_placeholder": "Enter your phone number",
     
     "type_label": "Type of Visit",
-    "type_options": "Select type",
-    "type_family": "Family Visit",
-    "type_group": "Group Visit",
-    "type_school": "School Trip",
-    "type_other": "Other",
+    "visit_type_placeholder": "Type of Visit",
+    "type_visit_farmtour": "Farm Tour",
+    "type_visit_workshop": "Workshop",
+    "type_visit_private": "Private Visit",
+    "type_visit_school": "School Visit",
+    "type_visit_event": "Special Event",
     
     "people_label": "Number of People",
     "people_placeholder": "Enter number",

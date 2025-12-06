@@ -65,11 +65,12 @@
     "phone_placeholder": "أدخل رقم هاتفك",
     
     "type_label": "نوع الزيارة",
-    "type_options": "اختر النوع",
-    "type_family": "زيارة عائلية",
-    "type_group": "زيارة جماعية",
-    "type_school": "رحلة مدرسية",
-    "type_other": "أخرى",
+    "visit_type_placeholder": "نوع الزيارة",
+    "type_visit_farmtour": "جولة في المزرعة",
+    "type_visit_workshop": "ورشة عمل",
+    "type_visit_private": "زيارة خاصة",
+    "type_visit_school": "زيارة مدرسية",
+    "type_visit_event": "فعالية خاصة",
     
     "people_label": "عدد الأشخاص",
     "people_placeholder": "أدخل العدد",

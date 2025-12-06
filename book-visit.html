@@ -47,12 +47,14 @@
                 <input type="text" placeholder="" data-key="phone_placeholder">
 
                 <label data-key="type_label"></label>
-                <select data-key="type_options">
-                    <option data-key="type_family"></option>
-                    <option data-key="type_group"></option>
-                    <option data-key="type_school"></option>
-                    <option data-key="type_other"></option>
+                <select>
+                    <option data-key="type_visit_farmtour"></option>
+                    <option data-key="type_visit_workshop"></option>
+                    <option data-key="type_visit_private"></option>
+                    <option data-key="type_visit_school"></option>
+                    <option data-key="type_visit_event"></option>
                 </select>
+
 
                 <label data-key="people_label"></label>
                 <input type="number" placeholder="" data-key="people_placeholder">
@@ -96,50 +98,6 @@
             item.classList.toggle("active");
         });
     });
-    </script>
-    <script>
-        // ===== TYPE OF VISIT DROPDOWN LOADER =====
-
-// List of visit types (keys must match your JSON)
-const visitTypes = [
-    "type_visit_farmtour",
-    "type_visit_workshop",
-    "type_visit_private",
-    "type_visit_school",
-    "type_visit_event"
-];
-
-// Fill dropdown based on selected language
-function loadVisitTypes(currentLang, translations) {
-    const select = document.getElementById("visitTypeSelect");
-    if (!select) return;
-
-    select.innerHTML = ""; // clear existing
-
-    visitTypes.forEach(key => {
-        const option = document.createElement("option");
-        option.value = key;
-        option.textContent = translations[currentLang][key] || key;
-        select.appendChild(option);
-    });
-}
-
-// Detect language change
-document.addEventListener("DOMContentLoaded", () => {
-    const currentLang = localStorage.getItem("lang") || "ar";
-
-    // Wait for translations object to load globally
-    if (typeof translations !== "undefined") {
-        loadVisitTypes(currentLang, translations);
-    }
-
-    // If your language switcher dispatches a custom event
-    document.addEventListener("languageChanged", (e) => {
-        const lang = e.detail.lang;
-        loadVisitTypes(lang, translations);
-    });
-});
-
     </script>
     <script src="assets/js/translation.js"></script>
 </body>
