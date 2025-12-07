@@ -12,61 +12,99 @@
     <!-- HEADER -->
     <div id="header-placeholder"></div>
 
-    <section class="visit-page">
+<section class="visit-page">
 
-    <!-- Background Image -->
+    <!-- HERO BACKGROUND -->
     <div class="hero-visit-background">
         <img src="assets/images/banners/booking.jpg" alt="">
+        <div class="green-overlay"></div>
+
+        <p class="visit-intro" data-key="visit_intro"></p>
     </div>
 
+    <!-- CONTENT -->
     <div class="visit-container">
 
-        <!-- LEFT SIDE -->
+        <!-- LEFT -->
         <div class="visit-left">
-            <h1 data-key="visit_title"></h1>
-            <p data-key="visit_paragraph"></p>
 
-            <!-- FAQ -->
-            <div class="faq-item-visit">
-                <button class="faq-question-visit" data-key="whatsincluded"></button>
-                <div class="faq-answer-visit" data-key="whatsincludedAnswer"></div>
+            <h1 class="visit-book-title" data-key="visit_book_title"></h1>
+            <p class="visit-book-desc" data-key="visit_book_desc"></p>
+
+            <!-- Accordion -->
+            <div class="visit-accordion">
+
+                <div class="accordion-item">
+                    <button class="accordion-header" data-key="visit_type_A_title"></button>
+                    <div class="accordion-content">
+                        <ul data-key="visit_type_A_list"></ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" data-key="visit_type_B_title"></button>
+                    <div class="accordion-content">
+                        <ul data-key="visit_type_B_list"></ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" data-key="visit_type_C_title"></button>
+                    <div class="accordion-content">
+                        <ul data-key="visit_type_C_list"></ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" data-key="visit_type_D_title"></button>
+                    <div class="accordion-content">
+                        <ul data-key="visit_type_D_list"></ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" data-key="visit_type_E_title"></button>
+                    <div class="accordion-content">
+                        <ul data-key="visit_type_E_list"></ul>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <!-- RIGHT SIDE FORM -->
+        <!-- RIGHT — FORM -->
         <div class="visit-right">
             <form class="visit-form">
 
                 <label data-key="name_label"></label>
-                <input type="text" placeholder="" data-key="name_placeholder">
+                <input type="text" data-key="name_placeholder">
 
                 <label data-key="email_label"></label>
-                <input type="email" placeholder="" data-key="email_placeholder">
+                <input type="email" data-key="email_placeholder">
 
                 <label data-key="phone_label"></label>
-                <input type="text" placeholder="" data-key="phone_placeholder">
+                <input type="text" data-key="phone_placeholder">
 
                 <label data-key="type_label"></label>
-                <select>
-                    <option data-key="type_visit_farmtour"></option>
-                    <option data-key="type_visit_workshop"></option>
-                    <option data-key="type_visit_private"></option>
-                    <option data-key="type_visit_school"></option>
-                    <option data-key="type_visit_event"></option>
+                <select data-key="type_options">
+                    <option data-key="type_A"></option>
+                    <option data-key="type_B"></option>
+                    <option data-key="type_C"></option>
+                    <option data-key="type_D"></option>
+                    <option data-key="type_E"></option>
                 </select>
 
-
                 <label data-key="people_label"></label>
-                <input type="number" placeholder="" data-key="people_placeholder">
+                <input type="number" data-key="people_placeholder">
 
                 <label data-key="request_label"></label>
-                <textarea rows="4"></textarea>
+                <textarea rows="4" data-key=""></textarea>
 
                 <button type="submit" class="visit-submit" data-key="submit_btn"></button>
             </form>
         </div>
-
     </div>
+
 </section>
 
     <!-- FOOTER -->
@@ -83,21 +121,28 @@
         .then(res => res.text())
         .then(data => document.getElementById("footer-placeholder").innerHTML = data);
     </script>
-    <script>
-    const faqItems = document.querySelectorAll(".faq-item-visit");
+<script>
+const accordionItems = document.querySelectorAll('.accordion-item');
 
-    faqItems.forEach(item => {
-        item.querySelector(".faq-question-visit").addEventListener("click", () => {
+accordionItems.forEach(item => {
+    const header = item.querySelector('.accordion-header');
 
-            // close all others
-            faqItems.forEach(i => {
-                if (i !== item) i.classList.remove("active");
-            });
+    header.addEventListener('click', () => {
 
-            // toggle the clicked one
-            item.classList.toggle("active");
+        // Close all others
+        accordionItems.forEach(other => {
+            if (other !== item) {
+                other.classList.remove('active');
+            }
         });
+
+        // Toggle the clicked one
+        item.classList.toggle('active');
     });
-    </script>
+});
+</script>
+
+
+
     <script src="assets/js/translation.js"></script>
 </body>

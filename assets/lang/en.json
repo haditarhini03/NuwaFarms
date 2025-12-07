@@ -1,12 +1,12 @@
 {
   "nav_about": "About",
   "nav_products": "Products",
-  "nav_book": "Book a Visit",
+  "nav_book": "Experience",
 
-  "hero_title": "A Living Eco-Farm in South Lebanon",
-  "hero_desc": "NUWA is a vibrant eco-farm rooted in the rich landscape of South Lebanon, where permaculture practices meet rural tourism. Designed as an integrated living system, NUWA regenerates the land through sustainable agriculture, water harvesting, and native planting.",
+  "hero_title": "A Living Eco Farm & Learning Space in South Lebanon",
+  "hero_desc": "NUWA is a vibrant eco-farm rooted in the landscape of South Lebanon, where permaculture, regenerative agriculture, and rural tourism come together. Designed as an integrated living system, NUWA restores the land through sustainable farming, water harvesting, and native planting—while offering visitors a meaningful space to learn, reconnect, and experience nature in its purest form.",
 
-  "btn_about": "Learn More",
+  "btn_about": "Experience",
   "btn_shop": "Shop Now",
 
   "collection_title": "Our Collection",
@@ -18,20 +18,58 @@
 
   "build_title": "Build Your Own Farm",
 
-  "faq1_q": "Who is this for?",
-  "faq1_a": "Homeowners (Rooftops, balconies, backyards, private gardens)<br>Restaurants & Cafés (Farm-to-table herbs, vegetables, fresh produce)<br>Schools & Institutions (Educational gardens and learning spaces)<br>Landowners / Developers (Agricultural plots, food forests, eco-farm zones)",
+  "faq1_q": "Who Is This For?",
+  "faq1_a": "<strong><em>Bring nature into any space — small or large:</em></strong><br><strong>Homeowners</strong><br><em>Rooftops, balconies, backyards, private gardens — transform your home into a productive green space.</em><br><strong>Restaurants & Cafés</strong><br><em>Grow your own farm-to-table herbs, vegetables, and fresh produce all year round.</em><br><strong>Schools</strong><br><em>Create interactive educational gardens that support hands-on learning and environmental awareness.</em><br><strong>Landowners / Developers</strong><br><em>Design agricultural plots, edible landscapes, food forests, and eco-farm zones tailored to your land.</em>",
 
-  "faq2_q": "How it works?",
-  "faq2_a": "<strong>Step 1: Consultation</strong> — We discuss your space, needs, and goals (Online or on-site)<br><strong>Step 2: Site Visit & Assessment</strong> — Sunlight, soil, water access, technical conditions<br><strong>Step 3: Custom Design & Plan</strong> — Layout, plant selection, irrigation & full system<br><strong>Step 4: Implementation</strong> — DIY or handled by our team",
+  "faq2_q": "How It Works?",
+  "faq2_a": "<strong><em>A simple, guided process from idea to thriving farm:</em><br>Step 1: Consultation</strong><br><em>Online or on-site - we explore your space, needs, and goals.</em><br><strong>Step 2: Site Visit & Assessment</strong><br><em>We evaluate sunlight, soil quality, water access, layout potential, and technical conditions.</em><br><strong>Step 3: Custom Design & Plan</strong><br><em>You receive a tailored layout, plant selection, irrigation strategy, and a full system design.</em><br><strong>Step 4: Implementation</strong><br><em>Choose to build it yourself with our guidance or let our team implement everything for you.</em>",
 
-  "faq3_q": "What you get?",
-  "faq3_a": "Custom farm layout plan<br>Full planting strategy<br>Irrigation + compost + soil recommendations<br>Seasonal planting calendar<br>Materials list<br>Maintenance guidance<br>Optional follow-up and training",
- 
-  "about_hero_title": "An integrated eco-farm in South Lebanon, combining agriculture, water systems, native plants, and community spaces.",
+  "faq3_q": "What You Get",
+  "faq3_a": "<em><strong>A complete roadmap to launch and sustain your own productive green space:</strong><br>• Custom farm layout and design plan<br>• Full planting strategy (annuals, perennials, herbs, etc.)<br>• Irrigation, composting, and soil improvement recommendations<br>• Seasonal planting calendar<br>• Detailed materials and supplies list<br>• Maintenance guidance<br>• Optional: ongoing support, training, and follow-up visits</em>",
+
+  "about_hero_title": "A regenerative eco-farm where land, learning, and nature come alive.",
+
   "principles_title": "Our Principles",
-  "principles_text": "At NUWA Farms, every decision is guided by permaculture principles that respect the land, people, and resources. These principles help us design a farm that is resilient, productive, and educational.",
+  "principles_text": "At NUWA Eco-farms, every decision is guided by permaculture principles that respect the land, people, and resources. These principles help us design a farm that is resilient, productive, and educational.",
+
+  "p1_title": "Observe and Interact",
+  "p1_desc": "<strong>NUWA Eco-farm</strong> began with deep observation of the site, its slope, sun path, seasonal winds, soil behavior, and local community rhythms—guiding every spatial and ecological decision.",
+
+  "p2_title": "Use and Value Renewable Resources",
+  "p2_desc": "<strong>NUWA Eco-farm</strong> prioritizes low-cost, natural construction materials like stone, timber, pallets, and earth, reducing dependence on industrial inputs.",
+
+  "p3_title": "Use Small and Slow Solutions",
+  "p3_desc": "<strong>NUWA Eco-farm's</strong> phasing strategy builds slowly, ensuring each layer is functional before scaling.",
+
+  "p4_title": "Catch and Store Energy",
+  "p4_desc": "<strong>NUWA Eco-farm</strong> harvests rainwater, treats greywater, composts manure, and captures solar energy—converting waste into productive resources.",
+
+  "p5_title": "Produce No Waste",
+  "p5_desc": "Organic waste is composted on-site. Greywater and materials are reused or repurposed across the farm.",
+
+  "p6_title": "Use and Value Diversity",
+  "p6_desc": "Biodiversity is key. Mixed plantings, livestock, and cultural programming keep <strong>NUWA Eco-farm</strong> resilient socially and ecologically.",
+
+  "p7_title": "Obtain a Yield",
+  "p7_desc": "<strong>NUWA Eco-farm</strong> integrates food production, greenhouses, animals, and hospitality—creating economic, nutritional, and social value.",
+
+  "p8_title": "Design from Patterns to Details",
+  "p8_desc": "<strong>NUWA Eco-farm's</strong> layout follows natural movement paths and micro-zones, forming a coherent system that evolves organically.",
+
+  "p9_title": "Use Edges and Value the Marginal",
+  "p9_desc": "<strong>NUWA Eco-farm</strong> celebrates edges—between shade and sun, agriculture and wild space—as areas of productivity and experimentation.",
+
+  "p10_title": "Apply Self-Regulation and Accept Feedback",
+  "p10_desc": "Through modular grid systems and experimentation, <strong>NUWA Eco-farm</strong> adapts and improves based on what works seasonally and socially.",
+
+  "p11_title": "Integrate Rather Than Segregate",
+  "p11_desc": "<strong>NUWA Eco-farm</strong> blends agriculture, education, recreation, and ecology—strengthening connections across systems.",
+
+  "p12_title": "Creatively Use and Respond to Change",
+  "p12_desc": "<strong>NUWA Eco-farm</strong> evolves through flexible design, seasonal adjustments, and community-driven feedback.",
+  
   "concept_title": "Our Concept",
-  "concept_p1": "The layout of NUWA eco-farm is organized around two main loops that shape the visitor experience. The recreational loop connects communal spaces like the family gathering area, play zone, pond, and the farmhouse restaurant, inviting relaxation and celebrating local culinary heritage. The educational loop links productive zones such as the greenhouses, kitchen beds, and multi-functional grid, encouraging engagement with sustainable farming and traditional practices.",
+  "concept_p1": "<strong>The layout of NUWA Eco-farm is shaped around two interconnected loops that guide the visitor experience.</strong><br>The<strong> recreational loop </strong>links communal spaces such as the family gathering area, play zone, pond, and farmhouse restaurant - inviting guests to unwind, connect, and enjoy the richness of local culinary and cultural traditions.<br>The <strong>educational loop </strong>connects the farm's productive zones, including the greenhouse, kitchen gardens, and multi-functional grid. This path encourages visitors to engage with sustainable agriculture, explore local food systems, and experience traditional planting knowledge firsthand.<br>Together, these loops create a layered journey through the farm - one focused on recreation and cultural immersion, and the other on learning, participation, and deeper connection with the land.",
   "concept_p2": "A separate livestock trail allows for the discreet movement of animals across the site. The educational loop also encourages exploration of local food systems, sustainable practices, and traditional planting knowledge. A separate livestock trail allows for practical movement of animals at the northern part of the site without disrupting visitor flow. Together, the loops create a layered experience—one centered on recreation and cultural immersion, and the other on learning and engagement with the land.",
   
   "systems_title": "Key Systems",
@@ -39,37 +77,92 @@
   "system1_title": "Water Systems",
   "system1_desc": "Harvested rainwater and treated greywater are stored and redistributed through irrigation channels, ponds, and planted areas to reduce dependence on external sources.",
   "system2_title": "Organic Waste & Compost",
-  "system2_desc": "Plant residues, kitchen scraps, and livestock manure are transformed into compost, enriching the soil’s structure and long-term fertility.",
+  "system2_desc": "Plant residues, kitchen scraps, and livestock manure are transformed into compost, enriching the soil's structure and long-term fertility.",
   "system3_title": "Energy Systems",
   "system3_desc": "Solar panels and efficient infrastructure power daily operations, lighting, and equipment with reduced environmental impact.",
   "system4_title": "Local Production System",
   "system4_desc": "Greenhouses, open fields, and raised beds supply fresh produce to visitors, the farm kitchen, and the surrounding community.",
-  "plan_desc": "The final concept plan presents a spatial arrangement that merges farm operations with guest experience. The layout includes five greenhouses, a series of 30 kitchen garden beds, composting bins, livestock zone, family gathering spaces, a play area, a central Saha, and a farm-to-table restaurant. Defined pathways framed by productive trees and native hedges connect these spaces, with a central loop tying together the core functions.",
-
+  "plan_desc": "The layout establishes a spatial arrangement that seamlessly integrates farm operations with the visitor experience. The layout features a large greenhouse divided into five sections, a series of 15 kitchen garden beds, composting bins, a livestock zone, family gathering spaces, a children's play area, a central Saha, and a farm-to-table restaurant. Defined pathways framed by productive trees and native hedges guide guests through the site, with a central loop connecting and unifying all core functions.",
+  
+  "gallery_title": "Our Gallery",
   "products_hero_title": "Our Products",
   "products_hero_p": "Explore our fresh, seasonal baskets sourced directly from our fields and prepared with care for your home.",
   "small_box": "Small Basket",
   "medium_box": "Medium Basket",
   "large_box": "Large Basket",
+  "nav_weeklybox": "Weekly Basket",
+  "basket_name": "The NUWA Weekly Fresh Basket",
+  "basket_tagline": "<em>Fresh vegetables, milk, and eggs - picked and prepared each week as we would for our own family.</em>",
 
-  "visit_title": "Book Your Visit",
-    "visit_paragraph": "Plan your experience at NUWA Farms and enjoy nature, agriculture, and community activities.",
-    "whatsincluded": "What’s Included?",    
+  "included_title": "Included every week:",
+  "inc_item1": "Seasonal farm vegetables (4-7 varieties depending on the harvest)",
+  "inc_item2": "1 liter of fresh milk",
+  "inc_item3": "6 eggs from free-range chickens",
+
+  "produce_note": "<em>Produce varies weekly based on seasonality and freshness.</em>",
+  "practices_note": "All produce is grown using regenerative and permaculture practices, with no synthetic chemicals - supporting soil health, biodiversity, and local food resilience.",
+
+  "ordering_title": "Ordering Method",
+  "order_pickup": "Pickup from NUWA eco-farm",
+  "order_delivery": "Local delivery",
+  "order_whatsapp": "Order via WhatsApp",
+
+  "btn_order": "Order Now",
+  "btn_back": "Back to Products",
+
+    "cart_title": "Complete Your Order",
+
+  "cart_name_label": "Full Name",
+  "cart_name_placeholder": "Enter your name",
+
+  "cart_phone_label": "Phone Number",
+  "cart_phone_placeholder": "Enter your phone number",
+
+  "cart_method_label": "Pickup or Delivery",
+  "cart_pickup": "Pickup from NUWA Eco-Farm",
+  "cart_delivery": "Home Delivery",
+
+  "cart_address_label": "Delivery Address",
+  "cart_address_placeholder": "Enter your address",
+
+  "cart_submit": "Place Order",
+
+  "summary_title": "Your Basket",
+  "summary_item": "The NUWA Weekly Fresh Basket",
+  "summary_note": "Your basket is freshly prepared each week from our farm's seasonal harvest.",
+
+  
+     "visit_intro": "At NUWA eco-farm, we welcome visitors to explore our living eco-farm, learn about regenerative agriculture, connect with animals, walk through our gardens, and enjoy a peaceful day in nature. Whether you’re coming as a family, a school group, or a curious traveler, NUWA eco-farm offers an experience rooted in learning, relaxation, and connection with the land.",
+
+    "visit_book_title": "Book Your Visit",
+    "visit_book_desc": "Plan your experience at NUWA eco-farm and enjoy nature, agriculture, and community activities.",
+
+    "visit_type_A_title": "A. Farm Visit (General Visit)",
+    "visit_type_A_list": "<li>Self-guided or guided tour</li><li>Access to gardens, greenhouses, walking paths</li><li>Meet the animals</li><li>Picnic spaces</li>",
+
+    "visit_type_B_title": "B. Family Experience",
+    "visit_type_B_list": "<li>Play area</li><li>Family gathering zones</li><li>Hands-on kids activities</li>",
+
+    "visit_type_C_title": "C. Educational Visits (Schools & Groups)",
+    "visit_type_C_list": "<li>Age-tailored programs</li><li>Lessons on soil, plants, biodiversity</li><li>Interactive workshops</li><li>Guided tour included</li>",
+
+    "visit_type_D_title": "D. Workshops & Activities",
+    "visit_type_D_list": "<li>Gardening workshops</li><li>Composting</li><li>Herbal product making</li><li>Farm-to-table cooking</li><li>Nature crafts</li>",
+
+    "visit_type_E_title": "E. Farm-to-Table Experience",
+    "visit_type_E_list": "<li>Meal at the farmhouse restaurant</li><li>Seasonal tasting menu</li><li>Cooking demonstrations</li>",
+
     "name_label": "Full Name",
     "name_placeholder": "Enter your name",
-    
-    "email_label": "Email",
-    
+    "email_label": "Email Address",
     "phone_label": "Phone Number",
     "phone_placeholder": "Enter your phone number",
-    
     "type_label": "Type of Visit",
-    "visit_type_placeholder": "Type of Visit",
-    "type_visit_farmtour": "Farm Tour",
-    "type_visit_workshop": "Workshop",
-    "type_visit_private": "Private Visit",
-    "type_visit_school": "School Visit",
-    "type_visit_event": "Special Event",
+    "type_A": "Farm Visit",
+    "type_B": "Family Experience",
+    "type_C": "Educational Visit",
+    "type_D": "Workshop / Activity",
+    "type_E": "Farm-to-Table Experience",
     
     "people_label": "Number of People",
     "people_placeholder": "Enter number",

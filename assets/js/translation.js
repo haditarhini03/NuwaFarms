@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initLangSwitch();
 
     async function loadLanguage(lang) {
-        response = await fetch("/NuwaFarms/assets/lang/" + lang + ".json");
+        response = await fetch(`/assets/lang/${lang}.json`);
         const translations = await response.json();
 
         document.querySelectorAll("[data-key]").forEach(el => {

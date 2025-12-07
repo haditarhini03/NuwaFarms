@@ -11,9 +11,56 @@
 <body>
     <!-- HEADER -->
     <div id="header-placeholder"></div>
+<div class="cart-page">
+
+    <h1 data-key="cart_title"></h1>
+
+    <div class="cart-container">
+
+        <!-- LEFT: CUSTOMER FORM -->
+        <form class="cart-form" id="orderForm">
+
+            <label data-key="cart_name_label"></label>
+            <input type="text" name="name" required data-key="cart_name_placeholder">
+
+            <label data-key="cart_phone_label"></label>
+            <input type="text" name="phone" required data-key="cart_phone_placeholder">
+
+            <label data-key="cart_method_label"></label>
+            <select name="method" id="methodSelect" required>
+                <option value="pickup" data-key="cart_pickup"></option>
+                <option value="delivery" data-key="cart_delivery"></option>
+            </select>
+
+            <!-- ADDRESS ONLY IF DELIVERY -->
+            <div id="addressField" style="display:none;">
+                <label data-key="cart_address_label"></label>
+                <input type="text" name="address" data-key="cart_address_placeholder">
+            </div>
+
+            <button type="submit" class="btn" data-key="cart_submit"></button>
+        </form>
+
+        <!-- RIGHT: ORDER SUMMARY -->
+        <div class="cart-summary">
+            <h2 data-key="summary_title"></h2>
+
+            <p class="item-name" data-key="summary_item"></p>
+
+            <p class="summary-note" data-key="summary_note"></p>
+        </div>
+
+    </div>
+</div>
 
     <!-- FOOTER -->
     <div id="footer-placeholder"></div>
+<script>
+document.getElementById("methodSelect").addEventListener("change", function() {
+    document.getElementById("addressField").style.display =
+        this.value === "delivery" ? "block" : "none";
+});
+</script>
 
     <script>
     // Load header
