@@ -45,7 +45,7 @@ margin-top: -75px;
 }
 
 .navlogo img {
-height: 80px;
+height: 70px;
 position: absolute;
 top: 0;
 left: 0;
@@ -143,4 +143,104 @@ font-weight: 700;
 
 .lang-switch .active::after {
 width: 100%; /* Active is always underlined */
+}
+
+
+/* =========================================
+   MOBILE HEADER — MAX WIDTH 900px
+   ========================================= */
+@media (max-width: 900px) {
+
+    header {
+        height: 70px !important;
+        padding: 5px 0 !important;
+        margin-top: -90px !important;
+        background: rgba(110,112,74,0.92) !important;
+        backdrop-filter: blur(4px);
+    }
+
+    header.scrolled {
+        height: 70px !important;
+        background: rgba(0,0,0,0.85) !important;
+    }
+
+    /* Container layout becomes tighter */
+    header .container {
+        width: 95% !important;
+        justify-content: space-between !important;
+        gap: 10px !important;
+    }
+
+    /* ==============================
+       LOGO
+       ============================== */
+    .navlogo {
+        margin: 0 !important;
+        margin-top: -50px !important;
+        position: relative;
+        top: 0;
+    }
+
+    .navlogo img {
+        height: 55px !important;
+    }
+
+    /* ==============================
+       NAVIGATION — collapse & shrink
+       ============================== */
+    .nav ul {
+        gap: 20px !important;
+    }
+
+    .nav a {
+        font-size: 16px !important;
+        font-weight: 600;
+    }
+
+    /* Reduce underline thickness */
+    .nav a::after {
+        height: 1px !important;
+    }
+
+    /* ==============================
+       LANGUAGE SWITCHER
+       ============================== */
+    .lang-switch {
+        gap: 4px !important;
+    }
+
+    .lang-switch a {
+        font-size: 14px !important;
+        padding-bottom: 0 !important;
+    }
+
+    .lang-switch a::after {
+        height: 1px !important;
+    }
+}
+
+/* =========================================
+   VERY SMALL SCREENS — UNDER 550px
+   ========================================= */
+@media (max-width: 550px) {
+
+    header {
+        height: 65px !important;
+    }
+
+    .navlogo img {
+        height: 48px !important;
+    }
+
+    .nav ul {
+        gap: 14px !important;
+    }
+
+    .nav a {
+        font-size: 14px !important;
+    }
+
+    .lang-switch a {
+        font-size: 13px !important;
+    }
 }

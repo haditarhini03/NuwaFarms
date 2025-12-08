@@ -69,8 +69,8 @@
   "p12_desc": "<strong>NUWA Eco-farm</strong> evolves through flexible design, seasonal adjustments, and community-driven feedback.",
   
   "concept_title": "Our Concept",
-  "concept_p1": "<strong>The layout of NUWA Eco-farm is shaped around two interconnected loops that guide the visitor experience.</strong><br>The<strong> recreational loop </strong>links communal spaces such as the family gathering area, play zone, pond, and farmhouse restaurant - inviting guests to unwind, connect, and enjoy the richness of local culinary and cultural traditions.<br>The <strong>educational loop </strong>connects the farm's productive zones, including the greenhouse, kitchen gardens, and multi-functional grid. This path encourages visitors to engage with sustainable agriculture, explore local food systems, and experience traditional planting knowledge firsthand.<br>Together, these loops create a layered journey through the farm - one focused on recreation and cultural immersion, and the other on learning, participation, and deeper connection with the land.",
-  "concept_p2": "A separate livestock trail allows for the discreet movement of animals across the site. The educational loop also encourages exploration of local food systems, sustainable practices, and traditional planting knowledge. A separate livestock trail allows for practical movement of animals at the northern part of the site without disrupting visitor flow. Together, the loops create a layered experience—one centered on recreation and cultural immersion, and the other on learning and engagement with the land.",
+  "concept_p1": "<strong>The layout of NUWA Eco-farm is shaped around two interconnected loops that guide the visitor experience.</strong><br>The<strong> recreational loop </strong>links communal spaces such as the family gathering area, play zone, pond, and farmhouse restaurant - inviting guests to unwind, connect, and enjoy the richness of local culinary and cultural traditions.",
+  "concept_p2": "The <strong>educational loop </strong>connects the farm's productive zones, including the greenhouse, kitchen gardens, and multi-functional grid. This path encourages visitors to engage with sustainable agriculture, explore local food systems, and experience traditional planting knowledge firsthand.<br>Together, these loops create a layered journey through the farm - one focused on recreation and cultural immersion, and the other on learning, participation, and deeper connection with the land.",
   
   "systems_title": "Key Systems",
   "systems_intro": "NUWA Farms operates as an integrated ecosystem where water, energy, soil, plants, and people all work together. Each system supports the others to reduce waste and increase overall productivity.",
@@ -82,7 +82,7 @@
   "system3_desc": "Solar panels and efficient infrastructure power daily operations, lighting, and equipment with reduced environmental impact.",
   "system4_title": "Local Production System",
   "system4_desc": "Greenhouses, open fields, and raised beds supply fresh produce to visitors, the farm kitchen, and the surrounding community.",
-  "plan_desc": "The layout establishes a spatial arrangement that seamlessly integrates farm operations with the visitor experience. The layout features a large greenhouse divided into five sections, a series of 15 kitchen garden beds, composting bins, a livestock zone, family gathering spaces, a children's play area, a central Saha, and a farm-to-table restaurant. Defined pathways framed by productive trees and native hedges guide guests through the site, with a central loop connecting and unifying all core functions.",
+  "plan_desc": "The layout establishes a spatial arrangement that seamlessly integrates farm operations with the visitor experience. The layout features a large greenhouse divided into five sections, a series of 15 kitchen garden beds, composting bins, a livestock zone, family gathering spaces, a children’s play area, a central Saha, and a farm-to-table restaurant. Defined pathways framed by productive trees and native hedges guide guests through the site, with a central loop connecting and unifying all core functions.",
   
   "gallery_title": "Our Gallery",
   "products_hero_title": "Our Products",
@@ -175,6 +175,8 @@
   "trees": "Trees",
   "plants": "Plants",
   "crops": "Crops",
+  "trees_title": "Our Trees",
+  "plants_title": "Our Plants",
   "newsletter_text": "Subscribe for our farm's updates and discounts",
   "email_placeholder": "Email",
   "submit_btn": "Submit",
