@@ -12,7 +12,7 @@
     <!-- HEADER -->
     <div id="header-placeholder"></div>
 
-<section class="visit-page">
+<section class="visit-page" style="margin-top: -90px;">
 
     <!-- HERO BACKGROUND -->
     <div class="hero-visit-background">
@@ -74,34 +74,39 @@
 
         <!-- RIGHT — FORM -->
         <div class="visit-right">
-            <form class="visit-form">
+            <form class="visit-form" id="visitForm">
 
-                <label data-key="name_label"></label>
-                <input type="text" data-key="name_placeholder">
+    <label data-key="name_label"></label>
+    <input type="text" name="name" data-key="name_placeholder" required>
 
-                <label data-key="email_label"></label>
-                <input type="email" data-key="email_placeholder">
+    <label data-key="email_label"></label>
+    <input type="email" name="email" data-key="email_placeholder" required>
 
-                <label data-key="phone_label"></label>
-                <input type="text" data-key="phone_placeholder">
+    <label data-key="phone_label"></label>
+    <input type="text" name="phone" data-key="phone_placeholder" required>
 
-                <label data-key="type_label"></label>
-                <select data-key="type_options">
-                    <option data-key="type_A"></option>
-                    <option data-key="type_B"></option>
-                    <option data-key="type_C"></option>
-                    <option data-key="type_D"></option>
-                    <option data-key="type_E"></option>
-                </select>
+    <label data-key="type_label"></label>
+    <select name="type" data-key="type_options">
+        <option data-key="type_A"></option>
+        <option data-key="type_B"></option>
+        <option data-key="type_C"></option>
+        <option data-key="type_D"></option>
+        <option data-key="type_E"></option>
+    </select>
 
-                <label data-key="people_label"></label>
-                <input type="number" data-key="people_placeholder">
+    <label data-key="people_label"></label>
+<input type="number" name="people" data-key="people_placeholder" required min="1">
 
-                <label data-key="request_label"></label>
-                <textarea rows="4" data-key=""></textarea>
+    <label data-key="visit_date"></label>
+    <input type="date" name="date" required>
 
-                <button type="submit" class="visit-submit" data-key="submit_btn"></button>
-            </form>
+    <label data-key="request_label"></label>
+    <textarea rows="4" name="message"></textarea>
+
+    <button type="submit" class="visit-submit" data-key="submit_btn"></button>
+
+</form>
+
         </div>
     </div>
 
@@ -141,6 +146,49 @@ accordionItems.forEach(item => {
     });
 });
 </script>
+<script>
+const today = new Date().toISOString().split("T")[0];
+document.getElementById("visitDate").setAttribute("min", today);
+
+document.getElementById("visitForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = this.name.value;
+    const email = this.email.value;
+    const phone = this.phone.value;
+    const type = this.type.value;
+    const people = this.people.value;
+    const date = this.date.value;
+    const extraMessage = this.message.value;
+
+    // Block negative or zero people
+    if (people < 1) {
+        alert("Number of people must be at least 1.");
+        return;
+    }
+
+    // Block past dates
+    if (new Date(date) < new Date(today)) {
+        alert("Please choose a future date.");
+        return;
+    }
+
+    let message = `Hello, I want to book a visit to Nuwa Eco-farm.%0A%0A`;
+    message += `Name: ${name}%0A`;
+    message += `Email: ${email}%0A`;
+    message += `Phone: ${phone}%0A`;
+    message += `Visit type: ${type}%0A`;
+    message += `Number of people: ${people}%0A`;
+    message += `Preferred date: ${date}%0A`;
+    message += `Message: ${extraMessage}%0A`;
+
+    const whatsappNumber = "96181676260";
+
+    const url = `https://wa.me/${whatsappNumber}?text=${message}`;
+    window.open(url, "_blank");
+});
+</script>
+
 
 
 

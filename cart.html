@@ -73,6 +73,32 @@ document.getElementById("methodSelect").addEventListener("change", function() {
         .then(res => res.text())
         .then(data => document.getElementById("footer-placeholder").innerHTML = data);
     </script>
-    
+    <script>
+// Handle form submit
+document.getElementById("orderForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = this.name.value;
+    const phone = this.phone.value;
+    const method = this.method.value;
+    const address = this.address ? this.address.value : "";
+
+    // Build message
+    let message = `New order:%0A`;
+    message += `Name: ${name}%0A`;
+    message += `Phone: ${phone}%0A`;
+    message += `Method: ${method}%0A`;
+
+    if (method === "delivery") {
+        message += `Address: ${address}%0A`;
+    }
+
+    // Open WhatsApp
+    const whatsappNumber = "96181676260"; 
+    const url = `https://wa.me/${whatsappNumber}?text=${message}`;
+    window.open(url, "_blank");
+});
+</script>
+
     <script src="assets/js/translation.js"></script>
 </body>

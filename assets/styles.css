@@ -32,9 +32,9 @@
     text-align: right;
     }
 
- /*==== Main Page =====*/
+/*==== Main Page =====*/
 /* ==========================
-   HERO BASE
+HERO BASE
 ========================== */
 .hero {
     position: relative;
@@ -61,7 +61,7 @@
 }
 
 /* ==========================
-   GLASS BOX PARENT
+GLASS BOX PARENT
 ========================== */
 .glass-box {
     position: relative;
@@ -77,7 +77,7 @@
 }
 
 /* ==========================
-   LEFT SIDE — LOGO CENTERED
+LEFT SIDE — LOGO CENTERED
 ========================== */
 .glass-box-left {
     display: flex;
@@ -93,7 +93,7 @@
 }
 
 /* ==========================
-   RIGHT SIDE (NAV + TEXT)
+RIGHT SIDE (NAV + TEXT)
 ========================== */
 .glass-box-right {
     flex: 1;                /* <-- MAKE IT TAKE FULL REMAINING WIDTH */
@@ -296,6 +296,8 @@
 
 
     .faq-question {
+    font-family: 'K2D';
+    color: black;
     width: 100%;
     background: none;
     border: none;
@@ -322,6 +324,8 @@ html[lang="ar"] .faq-question::after {
     }
 
     .faq-answer {
+            font-family: 'K2D';
+
     max-height: 0;
     overflow: hidden;
     font-size: 1.1rem;
@@ -339,46 +343,6 @@ html[lang="ar"] .faq-question::after {
     border-radius: 10px;
     }
 
-    /*==== About Page ====*/
-    .about-page video{
-    position: absolute;
-    width: 100%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%)    ;
-    object-fit: cover;
-    z-index: -10;
-    }
-    .about-hero {
-    position: relative;
-    width: 100%;
-    height: 100%; /* adjust as needed */
-    }
-
-    .about-hero-logo {
-    position: absolute;
-    width: 20%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.4;
-    max-width: 250px; /* adjust size */
-    pointer-events: none; /* so logo doesn't block clicks on video if needed */
-    }
-
-    .about-hero h1 {
-    position: absolute;
-    bottom: 40px;
-    width: 50%;
-    text-align: center !important;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 0 20px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-    }
 /* ===== PRINCIPLES SECTION ===== */
 /* Container */
 .principles-section {
@@ -423,6 +387,7 @@ html[lang="ar"] .faq-question::after {
 .card-top {
     background: var(--clr);
     padding: 12px 16px;
+    height: 40px;
 }
 
 .card-top h3 {
@@ -538,7 +503,7 @@ html[lang="ar"] .card-bottom p {
 /* PREVIEW BOX */
 .preview-box {
     width: 40%;
-    height: 500px;
+    max-height: 500px;
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0,0,0,0.25);
@@ -546,7 +511,9 @@ html[lang="ar"] .card-bottom p {
 
 #preview-img {
     width: 80%;
-    height: 80%;
+    height: 70%;
+        max-height: 370px;
+
 }
 
 
@@ -712,7 +679,7 @@ html[lang="ar"] .card-bottom p {
 .gallery-slider {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     overflow: hidden;
 }
 
@@ -726,7 +693,7 @@ html[lang="ar"] .card-bottom p {
 /* Each image full-screen */
 .slides img {
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     object-fit: cover;
     flex-shrink: 0;
 }
@@ -748,7 +715,7 @@ html[lang="ar"] .slides {
 /* ========== HERO ========== */
 .products-hero {
     position: relative;
-    width: 100%;
+    width: auto;
     height: 100vh;
     min-height: 380px;
     overflow: hidden;
@@ -758,7 +725,9 @@ html[lang="ar"] .slides {
 .products-hero img {
     position: absolute;
     width: 100%;
+    height: 100vh;
     top: 40%;
+    margin-top: 90px;
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
@@ -772,7 +741,7 @@ html[lang="ar"] .slides {
     width: 100%;
     height: 100%;
 background-color: rgb(66,61,36,0.8); 
-   pointer-events: none;
+pointer-events: none;
 }
 /* Centered text */
 .products-hero-text {
@@ -1017,254 +986,18 @@ background-color: rgb(66,61,36,0.8);
     .cart-summary {
         width: 100%;
     }
-}/* === Visit Page === */
-.visit-page {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
 }
-
-/* HERO BACKGROUND */
-.hero-visit-background {
-    position: relative;
-    width: 100%;
-    height: 145vh;
-    min-height: 700px;
-    overflow: hidden;
-}
-
-.hero-visit-background img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.green-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.48);
-    z-index: 1;
-}
-
-/* INTRO TEXT */
-.visit-intro {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    color: white;
-    font-size: 28px;
-    line-height: 1.3;
-    text-align: center;
-    z-index: 2;
-}
-html[lang="ar"] .visit-intro{
-    font-size: 34px;
-}
-html[lang="ar"] .visit-book-title{
-        font-size: 38px;
-
-}
-html[lang="ar"] .visit-book-desc{
-        font-size: 23px;
-
-}
-html[lang="ar"] .accordion-header{
-        font-size: 24px;
-
-}
-
-html[lang="ar"] .accordion-content {
-
-        font-size: 20px;
-
-}
-/* CONTENT WRAPPER */
-.visit-container {
-    position: relative;
-    z-index: 3;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 10%;
-    gap: 40px;
-    margin-top: -800px;
-}
-
-/* LEFT SIDE */
-.visit-left {
-    width: 50%;
-    color: var(--cream);
-}
-
-.visit-book-title {
-    font-size: 38px;
-    color: white;
-}
-
-.visit-book-desc {
-    color: white;
-    font-size: 18px;
-    margin-bottom: 25px;
-    width: 70%;
-}
-
-/* ==========================
-   ACCORDION
-========================== */
-.accordion-item {
-    margin-bottom: 16px;
-    position: relative;
-}
-
-/* HEADER */
-.accordion-header {
-    width: 70%;
-    border: none;
-    padding: 16px 20px;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 20px;
-    cursor: pointer;
-    background-color: var(--darkgreen);
-    color: var(--cream);
-    position: relative;
-    text-align: left;
-}
-
-/* PLUS SIGN */
-.accordion-header::after {
-    content: "+";
-    position: absolute;
-    right: 18px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 22px;
-    color: var(--cream);
-    transition: transform 0.3s;
-}
-
-html[lang="ar"] .accordion-header::after {
-    right: auto;
-    left: 18px;
-}
-
-/* Rotate when open */
-.accordion-item.active .accordion-header::after {
-    transform: translateY(-50%) rotate(45deg);
-}
-
-/* CONTENT BOX */
-.accordion-content {
-    max-height: 0;
-    overflow: hidden;
-        width: 57%;
-    background-color: var(--cream);
-    border-radius: 20px;
-    margin-top: 6px;
-    padding: 0 20px;
-    transition: max-height 0.35s ease;
-}
-
-/* When open */
-.accordion-item.active .accordion-content {
-    max-height: 500px;
-        width: 57%;
-
-    padding: 15px 40px 15px 40px;
-}
-
-/* LIST INSIDE CONTENT */
-.accordion-content ul {
-    padding: 0;
-    margin: 0;
-    color: var(--darkgreen);
-    line-height: 1.7;
-}
-
-/* ==========================
-   RIGHT SIDE FORM
-========================== */
-.visit-right {
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.visit-form {
-    background: #fff;
-    padding: 30px;
-    border-radius: 20px;
-    width: 100%;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-html[lang="ar"]  .visit-form{
-    font-size: 20px;
-}
-html[lang="ar"]  .visit-submit{
-    font-size: 20px;
-}
-html[lang="ar"]  .visit-form select{
-    font-size: 18px;
-}
-.visit-form label {
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--darkgreen);
-}
-
-.visit-form input,
-.visit-form select,
-.visit-form textarea {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-.visit-submit {
-    background: var(--darkgreen);
-    color: white;
-    padding: 14px;
-    border-radius: 12px;
-    cursor: pointer;
-    text-align: center !important;
-    font-size: 18px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-
-    .visit-container {
-        flex-direction: column;
-        margin-top: -120px;
-    }
-
-    .visit-left,
-    .visit-right { width: 100%; }
-
-    .visit-book-title { font-size: 28px; }
-}
-
 
 /* =========================================
-   GLOBAL MOBILE RESPONSIVE SETTINGS
-   ========================================= */
+GLOBAL MOBILE RESPONSIVE SETTINGS
+========================================= */
 
 html, body {
     overflow-x: hidden !important;
 }
 
 /* Reduce universal spacing */
-@media (max-width: 900px) {
+@media (max-width: 920px) {
 
     /* Typography reductions */
     h1 { font-size: 26px !important; }
@@ -1274,13 +1007,12 @@ html, body {
 
 
     /* ======================
-       HERO SECTIONS
-       ====================== */
+    HERO SECTIONS
+    ====================== */
 
     .hero,
-    .products-hero,
-    .hero-visit-background {
-        height: 60vh !important;
+    .products-hero{
+        height: 100vh !important;
         min-height: 380px !important;
     }
 
@@ -1328,13 +1060,16 @@ html, body {
     }
 
     /* ======================
-       COLLECTION SECTION
-       ====================== */
-
+    COLLECTION SECTION
+    ====================== */
+    .main-collection h1 {
+        font-size: 28px !important;
+        margin-bottom: 0px !important;
+        
+    }
     .main-cards {
         grid-template-columns: 1fr !important;
         gap: 20px !important;
-        padding: 0 !important;
     }
 
     .left-card,
@@ -1343,22 +1078,28 @@ html, body {
         min-height: 300px !important;
         width: 100% !important;
     }
+    .left-card,.right-card{
+        max-width: 400px;
+        max-height: 310px;
+    }
 
     /* ======================
-       PLAN SECTION
-       ====================== */
+    PLAN SECTION
+    ====================== */
     .plan-inner {
         flex-direction: column !important;
         padding: 0 !important;
     }
-
+    .plan {
+        margin-top: -30px;
+    }
     .plan img {
         width: 100% !important;
     }
 
     /* ======================
-       BUILD / FAQ
-       ====================== */
+    BUILD / FAQ
+    ====================== */
 
     .build {
         padding: 40px 5% !important;
@@ -1368,28 +1109,23 @@ html, body {
         max-width: 100% !important;
     }
 
-    /* ======================
-       ABOUT PAGE
-       ====================== */
-    .about-hero h1 {
-        width: 90% !important;
-        font-size: 16px !important;
-    }
 
     /* ======================
-       PRINCIPLES GRID
-       ====================== */
+    PRINCIPLES GRID
+    ====================== */
     .principles-grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px !important;
     }
-
-    .card-top h3 { font-size: 15px !important; }
-    .card-bottom p { font-size: 13px !important; }
+    .card-top{
+        height: 35px;
+    }
+    .card-top h3 { font-size: 12px !important; }
+    .card-bottom p { font-size: 10px !important; }
 
     /* ======================
-       CONCEPT SECTION
-       ====================== */
+    CONCEPT SECTION
+    ====================== */
     .concept h1 {
         font-size: 26px !important;
         text-align: center !important;
@@ -1401,23 +1137,25 @@ html, body {
         gap: 10px !important;
         padding: 0 5% !important;
     }
-
     /* ======================
-       MASTERPLAN (HOTSPOTS)
-       ====================== */
+    MASTERPLAN (HOTSPOTS)
+    ====================== */
     .masterplan-wrapper {
         flex-direction: column !important;
         gap: 20px !important;
     }
 
-    .map-container,
-    .preview-box {
+    .map-container {
         width: 100% !important;
     }
-
+.preview-box{
+    width: 70%;
+    height: auto;
+    margin: 15%;
+}
     /* ======================
-       SYSTEMS SECTION
-       ====================== */
+    SYSTEMS SECTION
+    ====================== */
     .systems-section {
         flex-direction: column !important;
         gap: 30px !important;
@@ -1426,17 +1164,21 @@ html, body {
 
     .systems-image,
     .systems-content {
-        width: 100% !important;
+        width: 80% !important;
         text-align: center !important;
     }
+.systems-image{
+    padding: 10% 10% 0 10%;
+}
+.systems-image img{
+        max-height: 500px;
 
-    .systems-grid {
-        grid-template-columns: 1fr !important;
-    }
+}
+
 
     /* ======================
-       TREES + PLANTS SECTIONS
-       ====================== */
+    TREES + PLANTS SECTIONS
+    ====================== */
     .trees,
     .plants {
         padding: 40px 5% !important;
@@ -1450,19 +1192,31 @@ html, body {
     }
 
     /* ======================
-       GALLERY
-       ====================== */
+    GALLERY
+    ====================== */
     .gallery-slider {
-        height: 50vh !important;
+        height: 30vh !important;
     }
 
     .slides img {
-        height: 50vh !important;
+        height: 30vh !important;
     }
 
     /* ======================
-       BASKET PAGE
-       ====================== */
+    BASKET PAGE
+    ====================== */
+    .products-hero {
+        height: 60vh !important;
+    }
+    .products-hero img {
+        height: 72vh !important;
+    }
+    .products-hero-text h1 {
+        font-size: 32px !important;
+    }
+    .products-hero-text p {
+        font-size: 16px !important;
+    }
     .basket-details {
         flex-direction: column !important;
         text-align: center !important;
@@ -1470,8 +1224,8 @@ html, body {
     }
 
     .basket-image img {
-        width: 100% !important;
-        margin: 0 !important;
+        width: 90% !important;
+        margin: 10% !important;
     }
 
     .basket-info h1 {
@@ -1479,8 +1233,8 @@ html, body {
     }
 
     /* ======================
-       CART PAGE
-       ====================== */
+    CART PAGE
+    ====================== */
     .cart-container {
         flex-direction: column !important;
         gap: 30px !important;
@@ -1489,41 +1243,421 @@ html, body {
     .cart-page h1 {
         font-size: 26px !important;
     }
-
-    /* ======================
-       VISIT PAGE
-       ====================== */
-    .hero-visit-background {
-        height: 90vh !important;
+    .cart-summary {
+        width: 80% !important;
     }
 
-    .visit-intro {
-        font-size: 16px !important;
-        width: 90% !important;
-        top: 3% !important;
-    }
-
-    .visit-container {
-        flex-direction: column !important;
-        margin-top: -300px !important;
-        gap: 30px !important;
-    }
-
-    .visit-left,
-    .visit-right {
-        width: 100% !important;
-    }
-
-    .accordion-header {
-        font-size: 15px !important;
-        padding: 14px !important;
-    }
-
-    .accordion-content ul {
-        font-size: 14px !important;
-    }
-
-    .visit-form {
+}
+@media(max-width:500px){
+    .glass-box{
+        max-height: 90vh;
+        gap: 0;
+        margin: 0 !important;
+        margin-top: -30px !important;
         padding: 20px !important;
     }
+    .glass-box-right {
+        gap: 0 !important;
+    }
+    .glass-box h1{
+        font-size: 22px !important;
+    }
+
+}
+
+@media(max-width:500px){
+    .glass-box h1{
+        font-size: 20px !important;
+    }
+    .main-hero-nav ul {
+        gap: 15px !important;
+        font-size: 12px !important;
+    }
+}
+@media (max-width:600px){
+    .systems-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ======================
+ABOUT HERO (VIDEO)
+====================== */
+.about-hero {
+position: relative;
+width: 100%;
+height: 100vh;           /* desktop hero height */
+min-height: 520px;      /* keeps it strong on big screens */
+overflow: hidden;
+margin-top: -90px;
+}
+
+/* Video covers the hero properly */
+.about-hero video {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: 0;
+}
+
+/* Optional dark overlay for readability */
+.about-hero::after {
+content: "";
+position: absolute;
+inset: 0;
+background: rgba(0, 0, 0, 0.25);
+z-index: 1;
+}
+
+/* Center logo */
+.about-hero-logo {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: min(240px, 25vw);
+opacity: 0.35;
+z-index: 2;
+pointer-events: none;
+}
+
+/* Title pinned near bottom, centered */
+.about-hero h2 {
+position: absolute;
+left: 50%;
+bottom: 28px;
+transform: translateX(-50%);
+width: min(900px, 90%);
+margin: 0;
+color: white;
+font-size: 20px;
+font-weight: 700;
+line-height: 1.35;
+text-align: center;
+padding: 0 12px;
+text-shadow: 0 2px 10px rgba(0,0,0,0.55);
+z-index: 3;
+}
+
+/* ======================
+RESPONSIVE
+====================== */
+@media (max-width: 900px) {
+.about-hero {
+    height: 80vh;
+    min-height: 420px;
+}
+
+.about-hero-logo {
+    width: 20%;
+    height: auto;
+}
+
+.about-hero h2 {
+    font-size: 16px !important;
+    bottom: 18px;
+}
+}
+
+@media (max-width: 520px) {
+.about-hero {
+    height: 75vh;
+    min-height: 360px;
+}
+
+
+.about-hero h2 {
+    font-size: 14px !important;
+    width: 92%;
+}
+}
+/* ======================
+VISIT PAGE
+====================== */
+.visit-page {
+width: 100%;
+overflow-x: hidden;
+}
+
+/* ======================
+HERO BACKGROUND
+====================== */
+.hero-visit-background {
+position: relative;
+width: 100%;
+height: 130vh;
+min-height: 650px;
+overflow: hidden;
+}
+
+.hero-visit-background img {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.green-overlay {
+position: absolute;
+inset: 0;
+background: rgba(0, 0, 0, 0.45);
+z-index: 1;
+}
+
+/* Intro text */
+.visit-intro {
+position: absolute;
+top: 15%;
+left: 50%;
+transform: translateX(-50%);
+width: min(900px, 85%);
+color: white;
+font-size: 20px;
+line-height: 1.5;
+text-align: center;
+z-index: 2;
+}
+
+html[lang="ar"] .visit-intro {
+font-size: 24px;
+}
+
+/* ======================
+CONTENT WRAPPER
+====================== */
+.visit-container {
+position: relative;
+z-index: 3;
+display: flex;
+gap: 50px;
+padding: 80px 10%;
+background: transparent;
+margin-top: -100vh;
+}
+
+/* ======================
+LEFT SIDE
+====================== */
+.visit-left {
+width: 50%;
+color: var(--cream);
+}
+
+.visit-book-title {
+font-size: 38px;
+color: white;
+margin-bottom: 10px;
+}
+
+.visit-book-desc {
+font-size: 18px;
+color: white;
+margin-bottom: 30px;
+max-width: 520px;
+}
+
+html[lang="ar"] .visit-book-title {
+font-size: 36px;
+}
+
+html[lang="ar"] .visit-book-desc {
+font-size: 22px;
+}
+
+/* ======================
+ACCORDION
+====================== */
+.visit-accordion {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.accordion-item {
+width: 100%;
+}
+
+.accordion-header {
+width: 100%;
+background: var(--darkgreen);
+color: var(--cream);
+border: none;
+padding: 16px 22px;
+border-radius: 20px;
+font-size: 18px;
+font-weight: 700;
+cursor: pointer;
+position: relative;
+text-align: left;
+}
+
+html[lang="ar"] .accordion-header {
+font-size: 22px;
+text-align: right;
+}
+
+/* Plus icon */
+.accordion-header::after {
+content: "+";
+position: absolute;
+right: 18px;
+top: 50%;
+transform: translateY(-50%);
+font-size: 22px;
+transition: transform 0.3s;
+}
+
+html[lang="ar"] .accordion-header::after {
+right: auto;
+left: 18px;
+}
+
+.accordion-item.active .accordion-header::after {
+transform: translateY(-50%) rotate(45deg);
+}
+
+/* Content */
+.accordion-content {
+max-height: 0;
+overflow: hidden;
+background: var(--cream);
+border-radius: 20px;
+padding: 0 22px;
+transition: max-height 0.35s ease, padding 0.35s ease;
+}
+
+.accordion-item.active .accordion-content {
+max-height: 600px;
+padding: 18px 22px;
+}
+
+.accordion-content ul {
+margin: 0;
+padding: 0;
+list-style: none;
+color: var(--darkgreen);
+line-height: 1.7;
+}
+
+html[lang="ar"] .accordion-content ul {
+font-size: 20px;
+}
+
+/* ======================
+RIGHT SIDE FORM
+====================== */
+.visit-right {
+width: 45%;
+display: flex;
+justify-content: center;
+}
+
+.visit-form {
+width: 100%;
+background: white;
+padding: 30px;
+border-radius: 22px;
+box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+display: flex;
+flex-direction: column;
+gap: 18px;
+}
+
+.visit-form label {
+font-weight: 600;
+font-size: 16px;
+color: var(--darkgreen);
+}
+
+html[lang="ar"] .visit-form label {
+font-size: 18px;
+}
+
+.visit-form input,
+.visit-form select,
+.visit-form textarea {
+width: 100%;
+padding: 12px 14px;
+border-radius: 10px;
+border: 1px solid #ccc;
+}
+
+.visit-submit {
+background: var(--darkgreen);
+color: white;
+padding: 14px;
+border-radius: 12px;
+font-size: 18px;
+cursor: pointer;
+}
+
+/* ======================
+RESPONSIVE
+====================== */
+@media (max-width: 900px) {
+.hero-visit-background {
+    height: 100vh;
+    min-height: 520px;
+}
+
+.visit-container {
+    flex-direction: column;
+    padding: 60px 8%;
+    margin-top: -70vh;
+
+}
+
+.visit-left,
+.visit-right {
+    width: 100%;
+}
+
+.visit-book-title {
+    font-size: 28px;
+}
+
+.accordion-header {
+    font-size: 16px;
+    max-width: 500px;
+}
+
+
+.accordion-content ul {
+    font-size: 14px;
+        max-width: 500px;
+
+}
+
+.visit-intro {
+    font-size: 18px;
+    width: 70%;
+}
+html[lang="ar"] .visit-intro {
+font-size: 16px !important;
+}
+}
+@media (max-width: 500px) {
+    .visit-container {
+    flex-direction: column;
+    padding: 60px 8%;
+    margin-top: -50vh;
+
+}
+    .visit-intro {
+    font-size: 14px !important;
+    width: 70%; 
+}
+html[lang="ar"] .visit-intro {
+font-size: 16px !important;
+}
+.accordion-header {
+    font-size: 14px;
+}
+html[lang="ar"] .accordion-header {
+    font-size: 16px;
+    text-align: right;
+}
 }

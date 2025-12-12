@@ -189,11 +189,11 @@ width: 100%; /* Active is always underlined */
        NAVIGATION — collapse & shrink
        ============================== */
     .nav ul {
-        gap: 20px !important;
+        gap: 60px !important;
     }
 
     .nav a {
-        font-size: 16px !important;
+        font-size: 18px !important;
         font-weight: 600;
     }
 
@@ -217,6 +217,10 @@ width: 100%; /* Active is always underlined */
     .lang-switch a::after {
         height: 1px !important;
     }
+    html[lang="ar"] .navlogo{
+        margin-right: 30px !important;
+        margin-left: 0 !important;
+    }
 }
 
 /* =========================================
@@ -234,6 +238,7 @@ width: 100%; /* Active is always underlined */
 
     .nav ul {
         gap: 14px !important;
+        padding-inline-start: 10px;
     }
 
     .nav a {
