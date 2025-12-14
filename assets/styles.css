@@ -469,7 +469,103 @@ html[lang="ar"] .card-bottom p {
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
+/* =========================
+PERCENTAGE SECTION
+========================= */
+.percentage-section {
+position: relative;
+height: 100vh;
+width: 100%;
+overflow: hidden;
+}
+@media (max-width: 920px) {
+    .percentage-item h1 {
+        font-size: 60px !important;
+    }
+}
+/* Background */
+.percentage-bg {
+position: absolute;
+inset: 0;
+z-index: 0;
+}
 
+.percentage-bg img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.green-overlay {
+position: absolute;
+inset: 0;
+background: rgba(64, 63, 43, 0.75);
+}
+
+/* =========================
+SCROLLABLE CONTENT
+========================= */
+.percentage-content {
+position: relative;
+z-index: 1;
+height: 60%;
+overflow-y: auto;
+/* FIXED */
+padding: 20vh 18%;
+display: flex;
+flex-direction: column;
+gap: 180px;
+}
+
+/* hide scrollbar */
+.percentage-content::-webkit-scrollbar {
+width: 0;
+}
+
+/* =========================
+ITEMS
+========================= */
+.percentage-item {
+color: var(--cream);
+}
+
+.percentage-item h1 {
+font-size: 128px;
+line-height: 1;
+margin: 0;
+font-weight: 700;
+}
+
+.percentage-item h3 {
+font-size: 24px;
+margin-top: 12px;
+line-height: 1.4;
+}
+
+/* Language alignment */
+html[lang="en"] .percentage-item {
+align-self: flex-start;
+text-align: left;
+}
+
+html[lang="ar"] .percentage-item {
+align-self: flex-start;
+text-align: right;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+
+.percentage-item h1 {
+    font-size: 72px;
+}
+
+.percentage-item h3 {
+    font-size: 18px;
+}
+}
 
 .masterplan-wrapper {
     display: flex;
@@ -679,7 +775,7 @@ html[lang="ar"] .card-bottom p {
 .gallery-slider {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     overflow: hidden;
 }
 
@@ -693,7 +789,7 @@ html[lang="ar"] .card-bottom p {
 /* Each image full-screen */
 .slides img {
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
     object-fit: cover;
     flex-shrink: 0;
 }
@@ -1089,9 +1185,6 @@ html, body {
     .plan-inner {
         flex-direction: column !important;
         padding: 0 !important;
-    }
-    .plan {
-        margin-top: -30px;
     }
     .plan img {
         width: 100% !important;
