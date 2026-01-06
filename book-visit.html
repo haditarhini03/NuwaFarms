@@ -88,18 +88,19 @@
 
     <label data-key="type_label"></label>
     <select name="type" data-key="type_options">
-        <option data-key="type_A"></option>
-        <option data-key="type_B"></option>
-        <option data-key="type_C"></option>
-        <option data-key="type_D"></option>
-        <option data-key="type_E"></option>
+        <option value="Farm Visit" data-key="type_A"></option>
+        <option value="Family Experience" data-key="type_B"></option>
+        <option value="Educational Visit" data-key="type_C"></option>
+        <option value="Workshop" data-key="type_D"></option>
+        <option value="Farm-to-table" data-key="type_E"></option>
+
     </select>
 
     <label data-key="people_label"></label>
 <input type="number" name="people" data-key="people_placeholder" required min="1">
 
     <label data-key="visit_date"></label>
-    <input type="date" name="date" required>
+    <input type="date" name="date" id="visitDate" required>
 
     <label data-key="request_label"></label>
     <textarea rows="4" name="message"></textarea>
@@ -150,50 +151,56 @@ accordionItems.forEach(item => {
 });
 </script>
 <script>
-const today = new Date().toISOString().split("T")[0];
-document.getElementById("visitDate").setAttribute("min", today);
+document.addEventListener("DOMContentLoaded", () => {
 
-document.getElementById("visitForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+    const today = new Date().toISOString().split("T")[0];
 
-    const name = this.name.value;
-    const email = this.email.value;
-    const phone = this.phone.value;
-    const type = this.type.value;
-    const people = this.people.value;
-    const date = this.date.value;
-    const extraMessage = this.message.value;
-
-    // Block negative or zero people
-    if (people < 1) {
-        alert("Number of people must be at least 1.");
-        return;
+    const dateInput = document.querySelector('input[name="date"]');
+    if (dateInput) {
+        dateInput.setAttribute("min", today);
     }
 
-    // Block past dates
-    if (new Date(date) < new Date(today)) {
-        alert("Please choose a future date.");
-        return;
-    }
+    const form = document.getElementById("visitForm");
+    if (!form) return;
 
-    let message = `Hello, I want to book a visit to Nuwa Eco-farm.%0A%0A`;
-    message += `Name: ${name}%0A`;
-    message += `Email: ${email}%0A`;
-    message += `Phone: ${phone}%0A`;
-    message += `Visit type: ${type}%0A`;
-    message += `Number of people: ${people}%0A`;
-    message += `Preferred date: ${date}%0A`;
-    message += `Message: ${extraMessage}%0A`;
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
 
-    const whatsappNumber = "96181676260";
+        const name = this.name.value;
+        const email = this.email.value;
+        const phone = this.phone.value;
+        const type = this.type.value;
+        const people = this.people.value;
+        const date = this.date.value;
+        const extraMessage = this.message.value;
 
-    const url = `https://wa.me/${whatsappNumber}?text=${message}`;
-    window.open(url, "_blank");
+        if (people < 1) {
+            alert("Number of people must be at least 1.");
+            return;
+        }
+
+        if (new Date(date) < new Date(today)) {
+            alert("Please choose a future date.");
+            return;
+        }
+
+        let message =
+`Hello, I want to book a visit to Nuwa Eco-farm.
+
+Name: ${name}\n
+Email: ${email}\n
+Phone: ${phone}\n
+Visit type: ${type}\n
+Number of people: ${people}\n
+Preferred date: ${date}\n
+Message: ${extraMessage}\n`;
+
+        const whatsappNumber = "96181676260";
+        const encodedMessage = encodeURIComponent(message);
+
+        window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
+    });
 });
 </script>
-
-
-
-
     <script src="assets/js/translation.js"></script>
 </body>
