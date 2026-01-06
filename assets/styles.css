@@ -1527,6 +1527,7 @@ z-index: 3;
 display: flex;
 gap: 50px;
 padding: 80px 10%;
+padding-bottom: 0;
 background: transparent;
 margin-top: -100vh;
 }
@@ -1624,6 +1625,7 @@ transition: max-height 0.35s ease, padding 0.35s ease;
 
 .accordion-item.active .accordion-content {
 max-height: 600px;
+max-width: 500px;
 padding: 18px 22px;
 }
 
@@ -1737,7 +1739,6 @@ font-size: 16px !important;
     flex-direction: column;
     padding: 60px 8%;
     margin-top: -55vh;
-    padding-bottom: 350px;
 
 }
     .visit-intro {
@@ -1763,7 +1764,7 @@ OUR LOCATION
 display: flex;
 flex-direction: column;
 gap: 18px;
-margin-top: -300px;
+margin-top: -100px;
 padding: 80px 10%;
 }
 
@@ -1799,7 +1800,7 @@ text-align: left;
 
 /* Arabic → right */
 html[lang="ar"] .our-location {
-align-items: flex-end;
+align-items: flex-start;
 text-align: right;
 }
 
